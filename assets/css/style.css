@@ -1,0 +1,147 @@
+@font-face {
+    font-family: "Public Sans";
+    src: url("/assets/fonts/PublicSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Public Sans Bold";
+    src: url("/assets/fonts/PublicSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Arvo";
+    src: url("/assets/fonts/Arvo-Regular.ttf")
+}
+
+@font-face {
+    font-family: "Arvo Bold";
+    src: url("/assets/fonts/Arvo-Bold.ttf")
+}
+
+@font-face {
+    font-family: "Press Start 2P";
+    src: url("/assets/fonts/PressStart2P-Regular.ttf")
+}
+
+body {
+    font-family: "Public Sans", sans-serif;
+    color: #C8C8C8;
+    background-color: #202225;
+}
+
+.wrapper {
+    max-width: 966px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px;
+}
+
+body img {
+    max-width: 900px;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    min-height: 600px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    list-style-type: square;
+}
+
+.site-description {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+a,
+a:visited {
+    color: #009479;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00B499;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Arvo Bold", sans-serif;
+}
+
+.hr {
+    min-height: 2px;
+    border-top: dashed 2px #C8C8C8;
+    border-bottom: dashed 2px #C8C8C8;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-list-heading {
+    margin-top: 32px;
+    margin-left: 32px;
+    margin-right: 32px;
+    font-family: "Press Start 2P";
+    font-size: 16px;
+    display: table;
+    white-space: nowrap;
+}
+
+.post-list-heading:after {
+    max-height: 2px;
+    border-top: dashed 2px #C8C8C8;
+    content: '';
+    display: table-cell;
+    position: relative;
+    top: 0.75em;
+    left: 1.5%;
+    width: 100%;
+}
+
+.post-list {
+    margin-left: 32px;
+}
+
+.post-list * {
+    font-family: "Press Start 2P";
+    font-size: 16px;
+    list-style-type: none;
+    font-weight: normal;
+}
+
+.post-list h3 {
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-list > h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.contact-list {
+    margin-top: 4px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.jekyll-link {
+    color: #C8C8C8;
+}
+
+.jekyll-link > span {
+    color: #C43952;
+    font-weight: bold;
+}

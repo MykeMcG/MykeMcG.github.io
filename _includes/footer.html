@@ -1,0 +1,14 @@
+<div class="hr"></div>
+<footer>
+    <ul class="contact-list">
+        <h4>Contact</h4>
+        {%- if site.email -%}
+            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        {%- endif -%}
+        {%- if site.github_username -%}
+            <li><a href="https://github.com/{{ site.github_username | escape }}">Github</a></li>
+        {%- endif -%}
+    </ul>
+
+    <span>Powered by <a href="https://jekyllrb.com/" class="jekyll-link">Jekyll</a> + <a href="https://github.com/">GitHub</a></span>
+</footer>

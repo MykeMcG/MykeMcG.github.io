@@ -1,0 +1,351 @@
+---
+layout: default
+title: "ZeroRanger"
+date: 2019-10-10 00:42:00 -0300
+---
+
+<style>
+    body {
+        color: #FFFFFF;
+        background-color: #001D23;
+        background-color: #001d23;
+        background-image: url("/assets/files/ZeroRanger/win-bg.png");
+        background-position: right 18px top 18px;
+        background-attachment: fixed;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .wrapper {
+        padding: 16px;
+        max-width: 1024px;
+    }
+
+    main,
+    main h1,
+    main h2,
+    main h3,
+    main h4,
+    main h5,
+    main h6 {
+        font-family: "Press Start 2P", sans-serif;
+        letter-spacing: 0.05em
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    a,
+    a:visited {
+        color: #FF8000;
+    }
+
+    a:hover {
+        color: #FFC073;
+    }
+
+    th {
+        padding: 8px;
+    }
+
+    td,
+    th {
+        background-color: #003232;
+    }
+
+    figure {
+        background-color: #003232;
+        padding: 8px;
+    }
+
+    figcaption {
+        padding-top: 4px;
+        font-size: 8px;
+        text-align: center;
+    }
+
+    .hr {
+        background-color: #009479;
+        min-height: 4px;
+        border-top: none;
+        border-bottom: none;
+    }
+
+    @keyframes bg-slide {
+        from {
+            background-position: 0 0;
+        }
+
+        to {
+            background-position: -36px 36px;
+        }
+    }
+
+    .window {
+        background-color: rgba(0, 79, 77, 0.75);
+        padding: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 64px;
+        margin-bottom: 40px;
+        padding: 0px;
+        box-shadow: 6px 6px rgba(0, 50, 50, 0.5);
+        max-width: 90%;
+    }
+
+    .window>.window-header {
+        align-items: stretch;
+        position: relative;
+        top: -48px;
+        left: -16px;
+        background-color: #004f4d;
+        box-shadow: 6px 6px rgb(0, 50, 50, 0.5);
+        display: inline-block;
+        padding: 16px;
+    }
+
+    .window>*:nth-child(2) {
+        position: relative;
+        top: -32px;
+    }
+
+    .align-center {
+        text-align: center;
+    }
+
+    .align-right {
+        text-align: right;
+    }
+
+    #top {
+        position: fixed;
+        margin-top: 0px;
+        top: 16px;
+        right: 16px;
+        padding: 16px;
+        z-index: 5;
+    }
+
+    .intro {
+        display: flex;
+    }
+
+    .toc {
+        min-width: 400px;
+        max-width: 600px;
+        margin-right: 32px;
+        margin-left: 32px;
+    }
+
+    .toc li {
+        margin-bottom: 8px;
+    }
+
+    #logo {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    tr>td:first>span {
+        text-align: right;
+    }
+
+    .score::after {
+        content: "pts";
+        font-size: 8px;
+    }
+
+    #highlights>.window>ul {
+        margin: 32px 16px;
+    }
+
+    td>* {
+        vertical-align: middle;
+    }
+
+    table img {
+        display: inline;
+    }
+
+    .bonus-table {
+        text-align: justify;
+    }
+
+    .bonus-table>.row {
+        margin: 32px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 16px;
+        border-bottom: solid 4px #001D23;
+    }
+
+    .bonus-table>.row:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .bonus-table>.row:last-child {
+        border-bottom: none;
+    }
+
+    .bonus-table>.row>img {
+        display: inline;
+    }
+
+    .bonus-table>.row>p {
+        padding-right: 32px;
+        max-width: 70%;
+    }
+
+    .bonus-table>.hr {
+        margin-left: 64px;
+        margin-right: 64px;
+    }
+
+    #changelog>ul>li>p:first-child {
+        color: #FFC073;
+    }
+</style>
+
+<a id="top" class="window" href="#">Top &uarr;</a>
+
+<div class="intro">
+    <div class="window toc">
+        <h3 class="window-header">Contents</h3>
+        <ul>
+            <li>
+                <a href="#top-scores">My Top Scores</a>
+            </li>
+            <li>
+                <a href="#highlights">Highlight Videos</a>
+            </li>
+            <li>
+                <a href="#bonus">SE-Bonus Locations</a>
+            </li>
+            <li>
+                <a href="#changelog">Changelog</a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <img id="logo" src="assets/files/ZeroRanger/zeroranger-logo.png" />
+        <p>
+            ZeroRanger is a vertical shmup on <a href="https://store.steampowered.com/app/809020/ZeroRanger/">Steam</a>
+            and <a href="https://system-erasure.itch.io/zeroranger">Itch.io</a> developed by
+            <a href="https://se-made.com/index.html">System Erasure</a>.
+            This page is fan-made, and not associated with System Erasure.
+        </p>
+    </div>
+</div>
+
+<div class="window" id="top-scores">
+    <div class="window-header">
+        <h3>My Top Scores</h3>
+        <span class="filler"></span>
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 32px;">
+        <table style="margin-left: 32px;">
+            <col width="200">
+            <col width="100">
+            <col width="160">
+            <thead>
+                <tr>
+                    <th>Fighter</th>
+                    <th>Stage</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for score in site.data.zeroranger-scores  %}
+                <tr>
+                    <td class="align-center">
+                        {% if score.fighter == "B" %}
+                        <img src="assets/files/ZeroRanger/type-b.png" />
+                        {% elsif score.fighter == "C" %}
+                        <img src="assets/files/ZeroRanger/type-c.png" />
+                        {% endif %}
+                        <span>Type-{{ score.fighter }}</span>
+                    </td>
+                    <td class="align-center">{{ score.stage }}</td>
+                    <td class="align-right score">{{ score.score }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <figure>
+            <img src="assets/files/ZeroRanger/game-over.png" alt="A ruined Type-C fighter floats among the stars">
+            <figcaption>The adventure of life goes on</figcaption>
+        </figure>
+        <img src="" />
+    </div>
+</div>
+
+<div id="highlights" class="window">
+    <div class="window-header">
+        <h3>Highlight Videos</h3>
+        <span class="filler"></span>
+    </div>
+    <ul>
+        <li>
+            <a href="http://files.junkserv.net/s/6ceWR4dcpLrzoi6">2019-10-04 | BIG ZAN</a>
+        </li>
+    </ul>
+</div>
+
+<div id="bonus">
+    <h2>SE-Bonus Locations<img style="vertical-align: middle;" src="assets/files/ZeroRanger/se-bonus.gif" /></h2>
+    <p>
+        Here is a list of the SE-bonus items I've found so far.
+        It is by no means a complete list, as I've yet to find them all, but I figure someone may find this list useful.
+    </p>
+
+    <div id="bonus-1-1" class="window">
+        <div class="window-header">
+            <h3>Stage 1-1</h3>
+            <span class="filler"></span>
+        </div>
+        <div class="bonus-table">
+            <div class="row">
+                <p>
+                    Right at the very start of stage 1-1, a flock of birds flies off into the distance.
+                    One of these birds will be orange. Shoot it, and it will drop a SE-bonus.
+                </p>
+                <img class="bonus-screen" src="assets/files/ZeroRanger/se-bonus-1-1-1.png" />
+            </div>
+            <div class="row">
+                <p>
+                    During the fight with Arc Adder, once you've destroyed its shields, it will start firing rings of
+                    energy at you.
+                    With some careful maneuvering, it's possible to fly through these rings.
+                    Fly through four rings, and Arc Adder will drop a SE-bonus when you defeat it.
+                </p>
+                <img class="bonus-screen" src="assets/files/ZeroRanger/se-bonus-1-1-2.png" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="changelog" class="window">
+    <div class="window-header">
+        <h3>Changelog</h3>
+        <span class="filler"></span>
+    </div>
+    <ul>
+        <li>
+            <p>2019-10-10</p>
+            <ul>
+                <li>Updated Top Scores</li>
+                <li>Reworked a lot of the CSS</li>
+            </ul>
+
+        </li>
+        <li>
+            <p>2019-10-09</p>
+            <ul>
+                <li>Page Created</li>
+            </ul>
+        </li>
+    </ul>
+</div>
